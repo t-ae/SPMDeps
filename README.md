@@ -2,11 +2,13 @@
 
 This project is made on macOS.
 
-There's Linux-only dependency, so when `swift package resolve`. `Package.resolved` will be  dirty.
+There's Linux-only dependency, so when `swift package resolve`, `Package.resolved` will be  dirty.
 
-It seems that dependency causes other libraries degration.
+It seems that dependency causes other libraries' degration.
 
 ## Steps to reproduce
+
+Execute the commands below on Linux
 
 ```
 # git clone https://github.com/t-ae/SPMDeps.git
@@ -36,7 +38,7 @@ index 388826c..e6c5e57 100644
          "repositoryURL": "https://github.com/t-ae/SPMDepLib.git",
 
 # git checkout -f 0.0.2
-# swift package resolve 
+# swift package resolve
 # git diff # Somehow SPMDepLib degrades
 diff --git a/Package.resolved b/Package.resolved
 index 0e4c54c..e6c5e57 100644
