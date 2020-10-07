@@ -70,3 +70,10 @@ index 0e4c54c..e6c5e57 100644
        },
        {
 ```
+
+## Avoid degration
+
+First `swift package resolve` writes the checkout information in `.build/workspace-state.json`.
+Then second `swift package resolve` refers that json and resolves to wrong version.
+
+To avoid this problem, run `swift package --force-resolved-versions resolve` before second `swift package resolve`.
