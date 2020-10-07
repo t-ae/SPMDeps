@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SPMDepLib",
+        "repositoryURL": "https://github.com/t-ae/SPMDepLib.git",
+        "state": {
+          "branch": null,
+          "revision": "6886f4618ef1e61449094c11b2302b1499038b20",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
